@@ -1,7 +1,7 @@
 {
-  "name": "express-app",
+  "name": "basic-express-app",
   "version": "1.0.0",
-  "description": "Basic express application",
+  "description": "Basic node & express application",
   "main": "index.js",
   "license": "MIT",
   "author": "Vinicius Bohrer <vbsanttos@gmail.com>",

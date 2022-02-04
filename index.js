@@ -9,8 +9,10 @@ app.get("/", async (_request, response) => {
     const html = await readFile("./home.html", "utf-8");
     response.status(200).send(html);
   } catch (error) {
-    response.status(500).send("Sorry, out of order!");    
+    response.status(500).send("Sorry, out of order!");
   }
 });
 
-app.listen(port, () => console.log(`Available at http://localhost:${port}/`));
+app.listen(port, () =>
+  console.log(`⚡ Available at http://localhost:${port}/`)
+);

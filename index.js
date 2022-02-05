@@ -6,7 +6,8 @@ const port = process.env.PORT || 3000;
 
 app.get("/", async (_request, response) => {
   try {
-    const html = await readFile("./home.html", "utf-8");
+    const homePagePath = __dirname + "/home.html";
+    const html = await readFile(homePagePath, "utf-8");
     response.status(200).send(html);
   } catch (error) {
     response.status(500).send("Sorry, out of order!");
